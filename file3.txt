@@ -3,3 +3,4 @@ This is some content
 A new line in file 1
 
 An additional line in file 3
+Add another line to test commit
