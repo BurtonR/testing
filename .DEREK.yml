@@ -1,0 +1,9 @@
+maintainers:
+ - burtonr
+
+features:
+ - dco_check
+ - comments
+ - pr_content_check
+
+contributing_url: https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md
