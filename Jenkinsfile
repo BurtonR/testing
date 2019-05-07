@@ -1,4 +1,4 @@
-stages {
+node {
     stage('first') {
         steps {        
         sh label: 'hi there', returnStdout: true, script: 'echo hello'
