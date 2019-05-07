@@ -8,7 +8,7 @@ node {
     stage('third') {
         def stringsToEcho = ["a", "b", "c", "d"]
         for (s in stringsToEcho) {
-            echo ${s}
+            echo "${s}"
         }
     }
 }
