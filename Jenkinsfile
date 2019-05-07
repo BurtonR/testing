@@ -8,7 +8,7 @@ node {
     stage('third') {
         def stringsToEcho = ["BurtonR.Thing1.Website.nuspec", "BurtonR.Thing2.API.nuspec", "BurtonR.Thing3.API2.nuspec", "BurtonR.Thing4.Database.nuspec"]
         for (s in stringsToEcho) {
-            echo "${s}"
+            sh label: 'repeat', returnStdout: true, script: "echo ${s}"
         }
     }
 }
