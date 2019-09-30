@@ -1,0 +1,2 @@
+File #1
+A new line in file 1
