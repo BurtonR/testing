@@ -1,0 +1,37 @@
+name: OctoCLI testing
+
+on: push
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: version
+      id: version
+      uses: burtonr/octopus-cli-action@7.4.4
+      with:
+        server: https://octo.burtonr.dev
+        apiKey: ${{ secrets.OCTOPUS_API_KEY }}
+
+  projects:
+    runs-on: ubuntu-latest
+    steps:
+    - name: projects
+      id: projects
+      uses: burtonr/octopus-cli-action@7.4.4
+      with:
+        server: https://octo.burtonr.dev
+        apiKey: ${{ secrets.OCTOPUS_API_KEY }}
+        command: list-projects
+
+  enviro:
+    runs-on: ubuntu-latest
+    env:
+      OCTOPUS_CLI_SERVER: https://octo.burtonr.dev
+      OCTOPUS_CLI_API_KEY: ${{ secrets.OCTOPUS_API_KEY }}
+    steps:
+    - name: using-enviro
+      id: enviro
+      uses: burtonr/octopus-cli-action@7.4.4
+      with:
+        command: list-projects
