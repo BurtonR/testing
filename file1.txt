@@ -1,5 +1,5 @@
 File #1
-This is the 1st file
+This is the file 1
 A new line in file 1
 
 Adding a new line to test forking
