@@ -1,3 +1,4 @@
 File #2
 This is the 2nd file
 A new line in file 2
+Another new line in file 2
